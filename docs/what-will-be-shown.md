@@ -1,57 +1,20 @@
-# What a Future Showcase Would Show
+# Possible demos
 
 [English](what-will-be-shown.md) | [Русский](what-will-be-shown.ru.md)
 
-**Planned direction only. No runnable demos are included in this package.**
+These are possible standalone examples, not included implementations. There is no release schedule. Each would use newly written code and invented inputs rather than material extracted from the private bot.
 
-The target is a small set of independently understandable engineering demonstrations, built from invented inputs rather than extracted private runtime material. This is not a promise of availability or a release schedule.
+## Four ideas
 
-**The curated documentation has been published publicly with the owner's authorization. The source stays private.** No runtime or demo has been published. Any future implementation or addition requires separate authorization and review; this document is not permission to export source or operate the private system.
+- **Parser:** an invented record format, normalized output, validation errors, and incomplete input. This could show parsing separately from acquisition. No real memory layouts, acquisition code, captured payloads, or imitation of the private runtime schema.
+- **Pathfinding:** a small hand-authored grid or graph with obstacles, alternative routes, and an unreachable destination. No real maps, recorded navigation data, live coordinates, game integration, or movement execution.
+- **Watchdog:** invented progress events, stalls, timeouts, recovery attempts, and a terminal stop, driven by a virtual clock. This could show state transitions and bounded retries without controlling real processes or remote sessions.
+- **PoeFleet-inspired dashboard:** invented instance labels, lifecycle states, alerts, and task outcomes, including incomplete observations. Any controls would affect only the synthetic model. No live connection, real deployment topology, captured screenshots, runtime configuration, or live metrics.
 
-## 1. Synthetic parser demonstration
+## Before publication
 
-**Idea:** Interpret a deliberately invented record format and show normalized output, validation failures, and handling of incomplete input.
+Examples would need to run offline, with no network access or dependency on the private source tree, configuration, or runtime. Inputs should be deterministic, execution bounded, and synthetic data clearly labeled. Checks should state what they cover and what they leave out.
 
-**What it would illustrate:** The value of pure parsing, explicit contracts, deterministic examples, and separation of interpretation from acquisition.
+Fixtures must be created from scratch, not made by sanitizing, transforming, or anonymizing private captures. Content and dependencies need review against the [allowlist](../PUBLIC_ALLOWLIST.md) and [denylist](../PUBLIC_DENYLIST.md), plus separate owner approval. These ideas do not add demo files to the current allowlist.
 
-**Boundary:** No acquisition layer, real memory layout, reverse-engineering details, captured payloads, or samples derived from private dumps. The invented format must not encode the private runtime schema.
-
-## 2. Synthetic pathfinding demonstration
-
-**Idea:** Use a hand-authored toy grid or graph with obstacles, alternative routes, and an unreachable destination.
-
-**What it would illustrate:** Route selection, failure cases, and explainable algorithmic decisions on a small, reproducible problem.
-
-**Boundary:** No real maps, captured navigation data, live coordinates, game integration, or movement execution. A solved toy route is not evidence of map completion in the private project.
-
-## 3. Synthetic watchdog demonstration
-
-**Idea:** Feed an invented event sequence to a small state model, including progress, missing progress, timeout, recovery, and a terminal stop.
-
-**What it would illustrate:** Explicit state transitions, bounded retries, and understandable failure reporting using a virtual clock rather than a live runtime.
-
-**Boundary:** No real process control, remote sessions, runtime control commands, or live supervision. Synthetic outcomes cannot establish operational reliability.
-
-## 4. Synthetic PoeFleet-inspired dashboard demonstration
-
-**Idea:** Present invented worker labels, lifecycle states, alerts, and task outcomes in a self-contained dashboard mockup with clearly marked synthetic data.
-
-**What it would illustrate:** A control-plane perspective on coordination, status visibility, and uncertainty in incomplete observations.
-
-**Boundary:** No operational control connection, real deployment topology, identifying labels, captured screenshots, live metrics, or runtime configuration. Any interactions would affect only the isolated synthetic model. This would not be a live PoeFleet deployment or evidence of fleet capacity.
-
-## Requirements for every future demo
-
-- Create fixtures from scratch; do not sanitize, transform, or anonymize raw private runtime captures into public samples.
-- Keep examples independent of the private source tree and runtime configuration.
-- Make them genuinely offline and hermetic, with no network access or external runtime integration.
-- Use deterministic inputs and bounded execution; label all illustrative data and outcomes as synthetic.
-- State exactly what was checked and what remains outside the demonstration's scope.
-- Review both content and dependencies against the [allowlist](../PUBLIC_ALLOWLIST.md) and [denylist](../PUBLIC_DENYLIST.md).
-- Obtain separate explicit approval before publication. Proposed demo files are not added to the current allowlist by this document.
-
-## What this package does not provide
-
-There is no implementation, installer, dependency bundle, runtime configuration, startup procedure, access instruction, or connection recipe. It contains no source-project certification, operational capacity claim, completion benchmark, or production-readiness claim.
-
-For current blockers and evidence limitations, see [Current Stage](current-stage.md).
+The [current stage](current-stage.md) explains the unresolved runtime questions and why a synthetic demo would not validate the whole bot.

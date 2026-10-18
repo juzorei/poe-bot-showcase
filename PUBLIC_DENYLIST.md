@@ -1,39 +1,28 @@
-# Public-Content Denylist
+# What stays private
 
 [English](PUBLIC_DENYLIST.md) | [Русский](PUBLIC_DENYLIST.ru.md)
 
-## Default-deny rule
+This list overrides the [allowlist](PUBLIC_ALLOWLIST.md). Its restrictions apply inside approved files too. Everything outside the allowlist is excluded by default; if a material's status is unclear, leave it out until separately reviewed.
 
-**The curated documentation has been published publicly with the owner's authorization. The source stays private.** The package is documentation only, not a runnable showcase. No runtime or demo has been published; future additions require separate approval and review.
+## Do not publish
 
-Everything outside the exact file set in the [allowlist](PUBLIC_ALLOWLIST.md) is excluded. The restrictions below also apply inside allowlisted files. If classification is uncertain, omit the material and require separate review rather than assuming it is safe.
+- **Secrets:** passwords, tokens, keys, cookies, session identifiers, connection credentials, or examples copied from material containing them.
+- **Private source and internals:** source exports, implementation snippets, offsets, signatures, pointer chains, memory layouts, acquisition details, or other reverse-engineering material.
+- **Runtime data:** memory dumps, captured payloads, recorded sessions, real maps, live coordinates, runtime state, traces, logs, telemetry, or fixtures derived from them.
+- **Operational details:** endpoints, ports, process names, infrastructure addresses, deployment or account identifiers, and private environment paths.
+- **Access and operation instructions:** RDP, VM, proxy, or account setup; connection, deployment, launch, remote-control, or live-game procedures.
+- **Runtime files and repository history:** configuration, environment files, caches, databases, persistent profiles, executables, installers, archives, dependency bundles, history, and metadata from the private repository.
+- **Captured media:** screenshots, recordings, dashboard exports, or other media from private environments or live sessions.
+- **Unsupported claims:** unverified test, CI, coverage, fleet-capacity, map-completion, or production-readiness claims. Claims of continuous unattended operation or evasion capabilities are also out of scope.
 
-## Prohibited content
+Category names can explain these exclusions. Actual values, actionable details, and representative private samples cannot be included, even with parts redacted.
 
-| Category | Excluded material |
-| --- | --- |
-| Secrets and credentials | Secret values, passwords, tokens, keys, cookies, session identifiers, connection credentials, or examples copied from credential-bearing artifacts. |
-| Private source and internals | Source exports, copied implementation snippets, offsets, signatures, pointer chains, memory layouts, acquisition details, or other reverse-engineering material. |
-| Raw memory and session data | Memory dumps, captured payloads, recorded sessions, real maps, live coordinates, runtime state, traces, logs, telemetry exports, or fixtures derived from them. |
-| Identifying and operational details | Exact endpoints, ports, process names, infrastructure addresses, deployment identifiers, account identifiers, or private environment paths. |
-| Access and operation instructions | RDP, VM, proxy, or account instructions; connection recipes; deployment, launch, remote-control, or live-game operation procedures. |
-| Runtime artifacts and dependencies | Runtime configuration, environment files, caches, local databases, persistent profiles, executables, installers, archives, dependency bundles, or repository history and metadata. |
-| Captured media | Screenshots, recordings, dashboard exports, or other media captured from private environments or live sessions. |
-| Unsupported claims | Claims of a current full test pass, CI/coverage, live fleet capacity, map completion, or production readiness without appropriate evidence. Claims of continuous unattended operation or evasion capabilities are out of scope. |
+## No indirect export
 
-Category names may be discussed to explain exclusions. Actual sensitive values, actionable details, and representative private samples must not be included, even in redacted examples.
+Do not embed, attach, or link to private artifacts. Renaming, truncating, encoding, redacting, sanitizing, or anonymizing raw runtime material does not make it publishable. Do not insert real configuration into an illustrative example; create synthetic data from scratch and label it as such.
 
-## No indirect disclosure
+Do not present conflicting metrics as benchmarks, logical host/guest separation as a security guarantee, or existing fake mode as hermetic or safe to distribute. See [Current stage](docs/current-stage.md).
 
-- Do not link to private artifacts, embed them in documents, or package them as attachments.
-- Do not treat renaming, truncation, encoding, redaction, or anonymization as sufficient grounds to export private runtime material.
-- Do not substitute real configuration into illustrative examples.
-- Do not disguise uncertain or conflicting metrics as benchmarks. Synthetic examples must remain explicitly synthetic.
-- Do not imply that a logical host/guest separation establishes a secure guest RPC boundary.
-- Do not label the existing fake mode hermetic or safe to distribute without an independent, scoped review.
+## Approval is limited to the documents
 
-## Boundaries of this task
-
-Authorization to publish the curated documentation does not authorize modifying the source project, running the bot or servers, starting virtual machines or remote sessions, making network calls other than those needed for the authorized documentation publication, interacting with a live game, or publishing unreviewed additions.
-
-A future synthetic demo is a separate task. Approval of this public documentation package does not relax these restrictions or authorize publication of the original project.
+Documentation approval does not permit changing or disclosing private source, running bots or servers, starting VMs or remote sessions, making operational network calls, or interacting with the live game. Future additions require content review and separate owner approval; a proposed synthetic demo is not an exception.
