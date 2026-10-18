@@ -2,27 +2,21 @@
 
 [English](PUBLIC_DENYLIST.md) | [Русский](PUBLIC_DENYLIST.ru.md)
 
-This list overrides the [allowlist](PUBLIC_ALLOWLIST.md). Its restrictions apply inside approved files too. Everything outside the allowlist is excluded by default; if a material's status is unclear, leave it out until separately reviewed.
+These boundaries override the [allowlist](PUBLIC_ALLOWLIST.md), including inside its fourteen approved documents. The public product story may explain capabilities and conceptual flows, not disclose the material below.
 
-## Do not publish
+## Excluded material
 
-- **Secrets:** passwords, tokens, keys, cookies, session identifiers, connection credentials, or examples copied from material containing them.
-- **Private source and internals:** source exports, implementation snippets, offsets, signatures, pointer chains, memory layouts, acquisition details, or other reverse-engineering material.
-- **Runtime data:** memory dumps, captured payloads, recorded sessions, real maps, live coordinates, runtime state, traces, logs, telemetry, or fixtures derived from them.
-- **Operational details:** endpoints, ports, process names, infrastructure addresses, deployment or account identifiers, and private environment paths.
-- **Access and operation instructions:** RDP, VM, proxy, or account setup; connection, deployment, launch, remote-control, or live-game procedures.
-- **Runtime files and repository history:** configuration, environment files, caches, databases, persistent profiles, executables, installers, archives, dependency bundles, history, and metadata from the private repository.
-- **Captured media:** screenshots, recordings, dashboard exports, or other media from private environments or live sessions.
-- **Unsupported claims:** unverified test, CI, coverage, fleet-capacity, map-completion, or production-readiness claims. Claims of continuous unattended operation or evasion capabilities are also out of scope.
+- **Secrets and identity:** passwords, tokens, keys, cookies, credentials, session or account details, infrastructure addresses, and private URLs.
+- **Private source and acquisition internals:** source exports, implementation snippets, offsets, signatures, pointer chains, memory layouts, acquisition recipes, private file/line references, local paths, commit hashes, and private history.
+- **Raw runtime data:** captures, memory dumps, actual state payloads, maps, coordinates, logs, traces, telemetry, session records, database exports, and fixtures derived from them.
+- **Operational steps:** account, proxy, VM, RDP, connection, deployment, launch, remote-control, or live-game procedures; real endpoints and configuration values.
+- **Runtime and media:** executables, installers, archives, dependency bundles, configurations, profiles, caches, screenshots, recordings, and dashboard exports.
+- **Unsupported claims:** fresh test passes, coverage or CI status, full-clear or campaign success, capacity, profit, resource savings, continuous unattended operation, evasion, or production readiness without appropriate evidence. Historical counts and simulations are not substitutes.
 
-Category names can explain these exclusions. Actual values, actionable details, and representative private samples cannot be included, even with parts redacted.
+Do not embed, attach, or link private artifacts. Redaction, renaming, transformation, or anonymization does not make raw private material publishable. Possible synthetic examples must use new code and invented data, not cleaned-up captures.
 
-## No indirect export
+## Keep distinctions intact
 
-Do not embed, attach, or link to private artifacts. Renaming, truncating, encoding, redacting, sanitizing, or anonymizing raw runtime material does not make it publishable. Do not insert real configuration into an illustrative example; create synthetic data from scratch and label it as such.
+Connected code is not live verification; a plan is not its executor; return to town is not proven clearance. Fleet authentication does not certify guest transport. Pooled process samples are not concurrent totals, and fake mode is not a hermetic distributable demo. The [current-stage page](docs/current-stage.md) explains these limits.
 
-Do not present conflicting metrics as benchmarks, logical host/guest separation as a security guarantee, or existing fake mode as hermetic or safe to distribute. See [Current stage](docs/current-stage.md).
-
-## Approval is limited to the documents
-
-Documentation approval does not permit changing or disclosing private source, running bots or servers, starting VMs or remote sessions, making operational network calls, or interacting with the live game. Future additions require content review and separate owner approval; a proposed synthetic demo is not an exception.
+Only the [listed documents](PUBLIC_ALLOWLIST.md) are in scope. No bot, server, VM, remote session, or network operation is authorized by documentation approval. New material needs separate review and owner approval.

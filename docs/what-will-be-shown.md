@@ -1,20 +1,38 @@
-# Possible demos
+# What this showcase presents
 
 [English](what-will-be-shown.md) | [Русский](what-will-be-shown.ru.md)
 
-These are possible standalone examples, not included implementations. There is no release schedule. Each would use newly written code and invented inputs rather than material extracted from the private bot.
+This repository explains an existing private Path of Exile 2 automation project. Its present deliverable is bilingual product and engineering documentation, not a collection of hypothetical implementations. The source-based account reflects the **2026-10-18** review, including uncommitted local work, with implementation status kept separate from live verification.
 
-## Four ideas
+## Available now: the product story
 
-- **Parser:** an invented record format, normalized output, validation errors, and incomplete input. This could show parsing separately from acquisition. No real memory layouts, acquisition code, captured payloads, or imitation of the private runtime schema.
-- **Pathfinding:** a small hand-authored grid or graph with obstacles, alternative routes, and an unreachable destination. No real maps, recorded navigation data, live coordinates, game integration, or movement execution.
-- **Watchdog:** invented progress events, stalls, timeouts, recovery attempts, and a terminal stop, driven by a virtual clock. This could show state transitions and bounded retries without controlling real processes or remote sessions.
-- **PoeFleet-inspired dashboard:** invented instance labels, lifecycle states, alerts, and task outcomes, including incomplete observations. Any controls would affect only the synthetic model. No live connection, real deployment topology, captured screenshots, runtime configuration, or live metrics.
+- **[Overview](../README.md):** what Poe Bot does, how mapping, supply, progression, and Fleet fit together, and what this project's development adds to upstream tachikoma-av/poe_bot.
+- **[Feature catalog](features.md):** twenty groups covering observation and control, navigation and combat, map lifecycle and encounters, loot and stash, preparation and Atlas, market restocking, campaign and builds, knowledge tooling, Fleet, configuration, frontend, rendering, resource analysis, and the observer bridge.
+- **[Architecture](architecture.md):** flows from state to action, through a map cycle and mid-map unloading, from knowledge to plans, from Fleet jobs to sessions, and from execution to observations. It marks the campaign/passive-plan wiring defect that blocks runner initialization and makes dependent gem setup unreachable through the current entrypoint, alongside the missing automatic campaign handoff and unavailable passive-node UI.
+- **[Current stage](current-stage.md):** connected implementation, standalone tools, prototypes, unfinished parts, compatibility limits, test scope, and the meaning of telemetry.
 
-## Before publication
+The actual Fleet frontend, Qt shell, map renderer, and new observer bridge belong to the private implementation described here. They are not public downloads, screenshots, or a ready-made dashboard demo. No images, runtime, raw records, or operating instructions are included.
 
-Examples would need to run offline, with no network access or dependency on the private source tree, configuration, or runtime. Inputs should be deterministic, execution bounded, and synthetic data clearly labeled. Checks should state what they cover and what they leave out.
+## Engineering themes the documents make visible
 
-Fixtures must be created from scratch, not made by sanitizing, transforming, or anonymizing private captures. Content and dependencies need review against the [allowlist](../PUBLIC_ALLOWLIST.md) and [denylist](../PUBLIC_DENYLIST.md), plus separate owner approval. These ideas do not add demo files to the current allowlist.
+The state reader illustrates acquisition separated from interpretation and explicit partial failures. Navigation and combat illustrate feedback-driven execution and declarative policy. Mapping and stash trips illustrate lifecycle boundaries, interruptions, and recovery. Fleet illustrates job cancellation, session coordination, and configuration evolution. Planning tools illustrate why computing a plan and executing it are different capabilities. Telemetry illustrates why a return-to-town event or pooled sample cannot stand in for a full-clear or capacity metric.
 
-The [current stage](current-stage.md) explains the unresolved runtime questions and why a synthetic demo would not validate the whole bot.
+These are descriptions of implemented work and its limits. They do not require exporting private code or promising measured game outcomes.
+
+## Possible later synthetic examples — unavailable
+
+No standalone synthetic demos are currently available, and there is no release schedule. If separately developed, examples could include:
+
+| Example | Engineering question | Invented input only |
+| --- | --- | --- |
+| Parser | How are valid fields and partial errors represented separately? | A newly designed record format, not the private runtime schema |
+| Routing and watchdog | How does a system distinguish an unreachable target, a stall, and a bounded recovery? | Hand-authored toy grids and virtual-clock events |
+| Lifecycle and job queue | How do preparation, interruption, cancellation, and terminal states differ? | Fictional map-cycle and job events |
+| Fleet-inspired view | How can an interface show lifecycle state and incomplete observations without overstating success? | Fictional instances and resource samples; controls affect only the model |
+| Planning | How can a graph plan be inspected without pretending an executor exists? | A small invented graph with no game integration |
+
+These would be newly written educational examples, not extracted or anonymized parts of the bot. Existing fake mode is not fully hermetic and is not a safe shortcut to a downloadable demo. Any example would need offline isolation, deterministic invented inputs, bounded execution, content review, and separate owner approval. It would demonstrate its own model, not verify the private runtime.
+
+## Publication scope
+
+Only the fourteen Markdown files in the [allowlist](../PUBLIC_ALLOWLIST.md) are included. The [denylist](../PUBLIC_DENYLIST.md) excludes secrets, private source, raw runtime data, and operational steps. Future demo ideas do not authorize additional files or publication of private artifacts.

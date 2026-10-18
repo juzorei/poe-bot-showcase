@@ -2,12 +2,16 @@
 
 [English](PUBLIC_ALLOWLIST.md) | [Русский](PUBLIC_ALLOWLIST.ru.md)
 
-Only the ten documents below are approved for publication. The [denylist](PUBLIC_DENYLIST.md) takes priority, including inside these files. Anything not listed is excluded by default.
+Exactly these **14 Markdown documents** are in scope: seven English pages and seven Russian counterparts. The [denylist](PUBLIC_DENYLIST.md) also applies inside approved files. Everything else is excluded by default.
 
-## Approved files
+## Exact file list
 
 - `README.md`
 - `README.ru.md`
+- `docs/features.md`
+- `docs/features.ru.md`
+- `docs/architecture.md`
+- `docs/architecture.ru.md`
 - `docs/current-stage.md`
 - `docs/current-stage.ru.md`
 - `docs/what-will-be-shown.md`
@@ -17,17 +21,16 @@ Only the ten documents below are approved for publication. The [denylist](PUBLIC
 - `PUBLIC_DENYLIST.md`
 - `PUBLIC_DENYLIST.ru.md`
 
-These are five English documents and five Russian translations: an introduction, current status, possible demos, and publication rules. Approval covers documentation only, not the private source, runtime, or demos.
-
 ## Allowed content
 
-- High-level descriptions of game automation, host/guest separation, parsing, pathfinding, watchdogs, and PoeFleet.
-- The experimental status and unresolved questions described in [Current stage](docs/current-stage.md), without private identifiers, values, or supporting artifacts.
-- Ideas for separately written demos with invented data, clearly presented as possibilities rather than existing implementations.
-- Relative links between these ten documents, with matching English and Russian content.
+- Product descriptions and the twenty-group feature catalog, with explicit implementation status.
+- Conceptual architecture flows, engineering trade-offs, and boundaries between planning, execution, and observation.
+- The current stage, source-review date and local-WIP basis, verification limits, and plain attribution to upstream tachikoma-av/poe_bot without private history or identifiers.
+- Descriptions of possible future synthetic examples, clearly unavailable and without a schedule.
+- Relative links among these fourteen files. Every page has a language switch; Russian content links to Russian pages except when switching language.
 
-## Future additions
+The source remains private. This approval covers documentation, not code exports, images, runtime files, or demos. It does not authorize network activity or operation of the bot.
 
-Review new material and changes against the denylist, including examples, links, metadata, and factual claims. Leave uncertain results unresolved; do not add unsupported badges or metrics.
+## Additions
 
-New demos, fixtures, screenshots, and source files need separate scope approval; this list does not pre-approve them. After content review, obtain explicit owner approval for the additions and their publication destination. Approval of the current documents does not extend to new material.
+Review changes against the denylist and keep EN/RU claims consistent. Unsupported results stay unconfirmed. Additional files, including separately written synthetic demos, require separate content review and owner approval before this list changes.
