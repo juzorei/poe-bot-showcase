@@ -4,7 +4,7 @@
 
 The target is a small set of independently understandable engineering demonstrations, built from invented inputs rather than extracted private runtime material. This is not a promise of availability or a release schedule.
 
-**The source stays private. Nothing is published by this package.** Any future implementation and publication require separate authorization; this document is not permission to export source or operate the private system.
+**The curated documentation has been published publicly with the owner's authorization. The source stays private.** No runtime or demo has been published. Any future implementation or addition requires separate authorization and review; this document is not permission to export source or operate the private system.
 
 ## 1. Synthetic parser demonstration
 

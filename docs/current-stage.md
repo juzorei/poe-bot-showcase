@@ -2,9 +2,9 @@
 
 ## Status and scope
 
-Poe Bot is a deep, private experimental project, not a frozen release. Its architectural work is worth explaining, but an externally safe, independently understandable showcase has not yet been prepared.
+Poe Bot is a deep, private experimental project, not a frozen release. Its architectural work is worth explaining, but an externally safe, independently understandable runnable showcase has not yet been prepared.
 
-**The source stays private. Nothing is published by this package.** These local documents are a coming-later status page, not a runnable showcase or a source distribution.
+**The curated documentation has been published publicly with the owner's authorization. The source stays private.** These documents are a status page, not a runnable showcase or a source distribution. No runtime or demo has been published; future additions require separate approval and review.
 
 This status is a conservative editorial snapshot, not a source execution report, security assessment, network validation, or live-system qualification. Architectural strengths must not be read as verified operational outcomes.
 

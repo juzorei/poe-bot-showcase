@@ -1,10 +1,10 @@
-# Poe Bot — Showcase Coming Later
+# Poe Bot — Documentation Showcase
 
-**Local status package · Private experimental project · Not a runnable showcase**
+**Public documentation · Private experimental project · Not a runnable showcase**
 
 Poe Bot is a deep private experimental project. This page describes its architectural strengths, current limitations, and the scope of a possible future synthetic showcase. It is not a frozen release, a deployment guide, or evidence of production readiness.
 
-**The source stays private. Nothing is published by this package.** Creating these local documents does not authorize publication, distribution, or disclosure of the source project. Any future publication requires separate explicit approval and a fresh content review.
+**The curated documentation has been published publicly with the owner's authorization. The source stays private.** No runtime or demo has been published. Publication of these documents does not authorize distribution or disclosure of the source project. Future additions require separate explicit approval and a fresh content review.
 
 ## Engineering focus
 
@@ -29,7 +29,7 @@ The following are **not confirmed** here:
 
 No bot, server, virtual machine, remote session, network call, or live game is part of this package. No source tests are claimed here. The status statements are intentionally conservative and are not a substitute for a fresh full-system validation.
 
-## Why the showcase is coming later
+## Why runnable demonstrations are coming later
 
 Credential/runtime artifacts must remain outside any export. Fake mode is not fully hermetic and must not be treated as a safe standalone demo. The guest RPC trust boundary needs further review, and incomplete or contradictory metrics do not support headline performance or reliability claims.
 
@@ -39,7 +39,7 @@ A future showcase would use purpose-built synthetic parser, pathfinding, watchdo
 
 - [Current stage and unresolved evidence](docs/current-stage.md)
 - [What a future showcase would show](docs/what-will-be-shown.md)
-- [Candidate public-content allowlist](PUBLIC_ALLOWLIST.md)
+- [Public-content allowlist](PUBLIC_ALLOWLIST.md)
 - [Public-content denylist](PUBLIC_DENYLIST.md)
 
-The allowlist is a review boundary, not publication permission. The denylist takes precedence wherever there is ambiguity.
+The allowlist is a review boundary, not blanket permission to publish future additions. The denylist takes precedence wherever there is ambiguity.

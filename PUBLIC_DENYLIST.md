@@ -2,7 +2,7 @@
 
 ## Default-deny rule
 
-**The source stays private. Nothing is published by this package.** The package is a local, documentation-only coming-later page, not a runnable showcase.
+**The curated documentation has been published publicly with the owner's authorization. The source stays private.** The package is documentation only, not a runnable showcase. No runtime or demo has been published; future additions require separate approval and review.
 
 Everything outside the exact file set in the [allowlist](PUBLIC_ALLOWLIST.md) is excluded. The restrictions below also apply inside allowlisted files. If classification is uncertain, omit the material and require separate review rather than assuming it is safe.
 
@@ -32,6 +32,6 @@ Category names may be discussed to explain exclusions. Actual sensitive values, 
 
 ## Boundaries of this task
 
-Creating these documents does not authorize modifying the source project, running the bot or servers, starting virtual machines or remote sessions, making network calls, interacting with a live game, or publishing anything.
+Authorization to publish the curated documentation does not authorize modifying the source project, running the bot or servers, starting virtual machines or remote sessions, making network calls other than those needed for the authorized documentation publication, interacting with a live game, or publishing unreviewed additions.
 
-A future synthetic demo is a separate task. Approval of this local status package does not relax these restrictions or authorize publication of the original project.
+A future synthetic demo is a separate task. Approval of this public documentation package does not relax these restrictions or authorize publication of the original project.
