@@ -1,5 +1,7 @@
 # Public-Content Denylist
 
+[English](PUBLIC_DENYLIST.md) | [Русский](PUBLIC_DENYLIST.ru.md)
+
 ## Default-deny rule
 
 **The curated documentation has been published publicly with the owner's authorization. The source stays private.** The package is documentation only, not a runnable showcase. No runtime or demo has been published; future additions require separate approval and review.

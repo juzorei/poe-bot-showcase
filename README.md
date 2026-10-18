@@ -1,5 +1,7 @@
 # Poe Bot — Documentation Showcase
 
+[English](README.md) | [Русский](README.ru.md)
+
 **Public documentation · Private experimental project · Not a runnable showcase**
 
 Poe Bot is a deep private experimental project. This page describes its architectural strengths, current limitations, and the scope of a possible future synthetic showcase. It is not a frozen release, a deployment guide, or evidence of production readiness.

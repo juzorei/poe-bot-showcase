@@ -1,5 +1,7 @@
 # What a Future Showcase Would Show
 
+[English](what-will-be-shown.md) | [Русский](what-will-be-shown.ru.md)
+
 **Planned direction only. No runnable demos are included in this package.**
 
 The target is a small set of independently understandable engineering demonstrations, built from invented inputs rather than extracted private runtime material. This is not a promise of availability or a release schedule.

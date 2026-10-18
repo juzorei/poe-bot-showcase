@@ -1,5 +1,7 @@
 # Current Stage
 
+[English](current-stage.md) | [Русский](current-stage.ru.md)
+
 ## Status and scope
 
 Poe Bot is a deep, private experimental project, not a frozen release. Its architectural work is worth explaining, but an externally safe, independently understandable runnable showcase has not yet been prepared.
