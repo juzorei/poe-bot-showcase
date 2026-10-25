@@ -2,9 +2,9 @@
 
 [English](README.md) | [Русский](README.ru.md)
 
-Poe Bot is a Path of Exile 2 automation project that combines game-state observation, navigation, combat, map preparation, inventory management, and multi-instance control. Its central workflow is a mapper: prepare a map, activate a fresh instance, enter, explore and handle encounters, then return and prepare for the next cycle. Around that workflow are a campaign prototype, build-planning tools, market restocking, and PoeFleet, an application for managing runners and observing their work.
+Poe Bot is a Path of Exile 2 automation project extending the upstream tachikoma-av/poe_bot codebase. Its mapper coordinates map preparation, navigation, combat, inventory handling and recovery. PoeFleet adds runner controls and diagnostics across instances. This public repository documents the private implementation, including unfinished paths and the boundary between inherited and newly developed work.
 
-The interesting engineering problem is not simply choosing the next action. It is keeping perception, decisions, input, recovery, and operator controls consistent when observations are incomplete, movement stalls, an inventory fills up, or a session changes state.
+The engineering focus is keeping observation, decisions, input and recovery consistent when movement stalls, inventory fills up or a session changes state.
 
 ## Inside the product
 
